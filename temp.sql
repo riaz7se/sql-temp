@@ -10,3 +10,9 @@ WHERE table_name = 'YOUR_TABLE_NAME' AND
 SELECT index_name 
 FROM user_indexes 
 WHERE table_name = 'YOUR_TABLE_NAME';
+
+
+    jvmArgs = ['--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+               '--add-opens', 'java.base/java.util=ALL-UNNAMED',
+               '--add-opens', 'java.base/java.util.concurrent=ALL-UNNAMED',
+               '--add-opens', 'java.base/java.time=ALL-UNNAMED']
